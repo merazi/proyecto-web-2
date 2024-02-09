@@ -1,0 +1,31 @@
+html {
+    font-family: sans;
+    margin: 0;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: lightgoldenrodyellow;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: auto;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: darkorange;
+    text-align: center;
+    padding: 1em 1em;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background: darkorange;
+    color: white;
+}
+
+.navbar-align-right {
+    float: right !important;
+}
