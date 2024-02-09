@@ -8,13 +8,18 @@ body {
 }
 
 .main-content {
+    float: left;
     padding: .5em;
-    margin-top: 2em;
     width: 80%;
     color: black;
     display: block;
-    background: lightgoldenrodyellow;
-    margin-top: 1em;
+    background: white;
+}
+
+.side-bar {
+    float: right;
+    padding: .5em;
+    background: white;
 }
 
 .navbar {
