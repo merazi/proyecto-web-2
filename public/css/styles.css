@@ -1,12 +1,26 @@
 html {
     font-family: sans;
     margin: 0;
+    background-color: #1E1E1E;
+}
+
+body {
+}
+
+.main-content {
+    padding: .5em;
+    margin-top: 2em;
+    width: 80%;
+    color: black;
+    display: block;
+    background: lightgoldenrodyellow;
+    margin-top: 1em;
 }
 
 .navbar {
     overflow: hidden;
     background-color: lightgoldenrodyellow;
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
     margin: auto;
@@ -15,15 +29,15 @@ html {
 .navbar a {
     float: left;
     display: block;
-    color: darkorange;
+    color: darkgoldenrod;
     text-align: center;
     padding: 1em 1em;
     text-decoration: none;
 }
 
 .navbar a:hover {
-    background: darkorange;
-    color: white;
+    background: darkgoldenrod;
+    color: whitesmoke;
 }
 
 .navbar-align-right {
