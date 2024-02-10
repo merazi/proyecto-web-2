@@ -19,5 +19,5 @@ fetch(RSS_URL)
         </article>
       `;
 	});
-	document.body.insertAdjacentHTML("beforeend", html);
+	content.insertAdjacentElement("afterbegin", html);
     });
