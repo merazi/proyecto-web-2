@@ -11,8 +11,7 @@ fetch(RSS_URL)
 	items.forEach(el => {
 	    html += `
         <article>
-          <!--<img src="${el.querySelector("link").innerHTML}image/large.jpg" alt=""/>-->
-          <h3 style="display: inline-block;">
+          <h3>
             <a href="${el.querySelector("link").innerHTML}" target="_blank" rel="noopener">
               <p style="display: inline-block;">🚀</p>
               ${el.querySelector("title").innerHTML}
