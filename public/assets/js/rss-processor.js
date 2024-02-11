@@ -12,13 +12,13 @@ fetch(RSS_URL)
 	    html += `
         <article>
           <!--<img src="${el.querySelector("link").innerHTML}image/large.jpg" alt=""/>-->
-          <h1 style="display: inline-block;">
+          <h3 style="display: inline-block;">
             <a href="${el.querySelector("link").innerHTML}" target="_blank" rel="noopener">
-              <img src="https://img.icons8.com/color/50/nasa.png" alt="" style="vertical-align: middle;"/>
+              <p style="display: inline-block;">🚀</p>
               ${el.querySelector("title").innerHTML}
             </a>
-          </h1>
-          <p>${el.querySelector("description").innerHTML}</p
+          </h3>
+          <p>${el.querySelector("description").textContent}</p
         </article>
       `;
 	});
