@@ -1,14 +1,8 @@
-/*
-	Hielo by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-*/
-
 var settings = {
 
 	banner: {
 
-		// Indicators (= the clickable dots at the bottom).
+		// Indicadores (= los 3 puntos del banner.
 			indicators: true,
 
 		// Transition speed (in ms)
@@ -39,6 +33,7 @@ var settings = {
 	 * Applies parallax scrolling to an element's background image.
 	 * @return {jQuery} jQuery object.
 	 */
+
 	$.fn._parallax = (skel.vars.browser == 'ie' || skel.vars.mobile) ? function() { return $(this) } : function(intensity) {
 
 		var	$window = $(window),
@@ -139,14 +134,16 @@ var settings = {
 				intervalId,
 				isLocked = false,
 				i = 0;
+				console.log($slides.length);
+				console.log($indicators);
 
-		// Turn off indicators if we only have one slide.
-			if ($slides.length == 1)
+		// apagar indicators si solo hay una imagen.
+			if ($slides.length == 1){
 				options.indicators = false;
-
+			}
 		// Functions.
 			$this._switchTo = function(x, stop) {
-
+				console.log("x= "+x);
 				if (isLocked || pos == x)
 					return;
 
@@ -155,11 +152,11 @@ var settings = {
 				if (stop)
 					window.clearInterval(intervalId);
 
-				// Update positions.
+				// actualizar posicion.
 					lastPos = pos;
 					pos = x;
 
-				// Hide last slide.
+				// ocultar ultima slide.
 					slides[lastPos].removeClass('top');
 
 					if (options.indicators)

@@ -4,10 +4,8 @@ fetch(RSS_URL)
     .then(response => response.text())
     .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
     .then(data => {
-	console.log(data);
 	const items = data.querySelectorAll("item");
 	let html = ``;
-	console.log(data.querySelector("link"))
 	items.forEach(el => {
 	    html += `
         <article>
