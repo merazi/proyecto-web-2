@@ -1,0 +1,19 @@
+.mission-picture {
+    float: left;  
+    margin-right: 2rem;
+}
+
+.mission-area {
+    padding: 2rem;
+    display: inline-block;
+    margin-bottom: 3rem;
+}
+
+.mission-area:hover {
+    background-color: lightgrey;
+    color: black;
+}
+
+iframe {
+    float: right;
+}
